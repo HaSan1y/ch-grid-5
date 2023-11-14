@@ -100,18 +100,17 @@
   Coded by <a href="#">&nbsp;Hasan</a>
   <button type="button" id='button'>f+</button><button type="button" id='buttonn'>f-</button>
 </footer>
+
 <script>
   let value = 16;
-
   let allElements = document.querySelectorAll('*');
-
   button.addEventListener("click", () => {
     if (value < 20) {
       value++;
+      allElements.forEach(element => {
+        element.style.fontSize = value + 'px';
+      });
     }
-    allElements.forEach(element => {
-      element.style.fontSize = value + 'px';
-    });
   })
 
   buttonn.addEventListener("click", () => {
