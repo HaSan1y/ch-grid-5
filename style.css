@@ -22,7 +22,7 @@ main {
 }
 
 section {
-    box-shadow: 20px 20px 25px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 20px 20px 25px 5px rgba(100, 100, 100, 0.3);
     border-radius: 10px;
     padding: 30px;
 }
@@ -32,7 +32,7 @@ section:nth-child(1) {
     grid-area: 1/ 1/ 5/ 10;
     /*grid-row-start/grid-column-start/grid-row-end/grid-column-end;*/
     color: white;
-    background-color: rgba(110, 58, 195, 0.7);
+    background-color: rgba(110, 58, 195, 0.9);
 }
 
 svg {
@@ -89,15 +89,11 @@ em {
     margin-bottom: 10px;
 }
 
-
-
 footer,
 footer a {
-    display: none;
     margin-top: 10px;
     color: black;
-    z-index: 99;
-    background-color: wheat;
+    background-color: rgba(240, 219, 187, 0.7);
 }
 
 @media screen and (max-width: 600px) {
@@ -111,15 +107,8 @@ footer a {
 
     main {
         display: flex;
-        grid-template-columns: 1fr;
         flex-wrap: wrap;
-        flex: 100%;
-        flex-direction: row;
         margin: 20px;
         outline: 0;
-    }
-
-    footer {
-        display: none;
     }
 }
